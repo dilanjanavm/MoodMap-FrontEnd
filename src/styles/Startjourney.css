@@ -1,0 +1,15 @@
+.customButtonJourney{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.greenCirleJourney{
+    position: absolute;
+    top: -900px;
+    left: -190px;
+    z-index: -1;
+}
+.btn.custom-button{
+    right: 0px;
+    left: auto;
+}

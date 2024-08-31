@@ -1,0 +1,23 @@
+.moodMapTitle {
+    font-family: 'Onest', sans-serif;
+    font-weight: 800;
+    font-size: 138px;
+    line-height: 175px;
+}
+
+.moodMapTitle>span {
+    color: #AE8BFF;
+    text-align: center;
+}
+.MoodMapDescription{
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30.12px;
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    color: #515151;
+    max-width: 39%;
+}

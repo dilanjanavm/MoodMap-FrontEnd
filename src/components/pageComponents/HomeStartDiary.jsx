@@ -10,8 +10,8 @@ import '../../styles/HomePage.css';
 
 const HomeStartDiary = () => {
     return (
-        <div style={{ position: 'relative', width: "100%", height: "100%", top:'40px' }}>
-            <div style={{ borderTop: '1px solid #E0E0E0', borderBottom: '1px solid #E0E0E0',}}>
+        <div style={{ position: 'relative', width: "100%", height: "100%", top: '40px' }}>
+            <div className='employeeImagesWrapper'>
                 <div className='employeeImages'>
                     <span><img src={image1} alt="employee image 1" /></span>
                     <span><img src={image2} alt="employee image 2" /></span>
@@ -22,11 +22,13 @@ const HomeStartDiary = () => {
                 <p className='employeeText'>
                     Track your mood, uncover patterns, and get personalized support. Empower your mental well-being with AI-driven insights designed to help you understand and navigate your emotions.
                 </p>
-                <div style={{position:'relative'}}>
-                    <CustomButton message="Start Diary" img={arrow} />
+                <div style={{ position: 'relative' }}>
+                    <div className='homeButtonWrapper'>
+                        <CustomButton message="Start Diary" img={arrow} />
+                    </div>
                 </div>
             </div>
-            <img src={greenRadR} alt="Green Gradient Circle" style={{ position: 'absolute', right: '-210px', top: '-400px', zIndex:-1 }} />
+            <img src={greenRadR} alt="Green Gradient Circle" style={{ position: 'absolute', right: '-210px', top: '-400px', zIndex: -1 }} />
         </div>
     )
 }

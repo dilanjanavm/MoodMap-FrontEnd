@@ -9,8 +9,5 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25.5px;
-    position: absolute;
-    left: 0;
-    top: 35px;
     z-index: 2;
 }

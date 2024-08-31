@@ -5,7 +5,7 @@ import '../../styles/HomePage.css';
 
 const HomePage = () => {
     return (
-        <Container fluid style={{marginTop:'170px', position:'relative'}}>
+        <Container fluid style={{marginTop:'206px', position:'relative'}}>
             <Row>
                 <Col sm='12' md='12' lg='12' xl='12'>
                     <h1 className="home-title">Navigate Your Emotions with Insightful Mood Tracking</h1>

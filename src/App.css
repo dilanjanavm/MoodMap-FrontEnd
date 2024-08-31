@@ -1,5 +1,28 @@
 #root {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 12rem;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  #root {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #root {
+    padding: 0 0.5rem;
+  }
 }

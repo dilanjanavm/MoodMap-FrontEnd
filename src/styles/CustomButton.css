@@ -1,0 +1,15 @@
+.btn.custom-button{
+    background-color: #C7A8D8;
+    border: none;
+    cursor: pointer;
+    padding: 19px 52px;
+    border-radius: 65px;
+    gap: 3px;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.5px;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}

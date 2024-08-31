@@ -10,7 +10,7 @@ function NavBar(args) {
 
     return (
         <div style={{ width: '100%' }}>
-            <Navbar {...args} expand={'md'} className='nav-bar' container={'fluid'}>
+            <Navbar {...args} expand={'lg'} className='nav-bar' container={'lg'} fixed='top'>
                 <NavbarBrand href="/"><img src={MoodMapLogo} alt="Mood Map Logo" style={{ width: '189px', height: '62px' }} /></NavbarBrand>
                 <NavbarToggler onClick={toggle} style={{ border: 'none' }} />
                 <Collapse isOpen={isOpen} navbar>

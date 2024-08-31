@@ -19,7 +19,7 @@ const StartJourney = () => {
                     </div>
                 </Col>
             </Row>
-        </Container>
+        </Container> 
     )
 }
 

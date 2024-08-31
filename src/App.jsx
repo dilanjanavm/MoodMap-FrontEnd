@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/pageComponents/NavBar'
 import FeaturesPage from './components/pages/FeaturesPage'
 import HomePage from './components/pages/HomePage'
+import MentalHealthPage from './components/pages/MentalHealthPage'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <HomePage />
       <FeaturesPage />
+      <MentalHealthPage />
     </main>
   )
 }

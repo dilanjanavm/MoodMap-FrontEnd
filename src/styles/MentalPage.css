@@ -1,0 +1,46 @@
+.mental-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: left;
+}
+.mental-description{
+    font-family: 'Onest', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.12px;
+    text-align: left;
+    color: #515151;
+    margin-top: 40px;
+}
+.mental-image-container {
+    position: absolute;
+    top: -60px;
+    right: -570px;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mental-image-container img {
+    position: absolute;
+    max-width: 100%; 
+    height: auto;
+}
+
+.mental-image-container img:nth-child(1) {
+    z-index: 1; 
+}
+
+.mental-image-container img:nth-child(2) {
+    z-index: 2; 
+}
+.green-circle-mental{
+    position: absolute;
+    top: -500px;
+    left: -200px;
+    z-index: -1;
+}

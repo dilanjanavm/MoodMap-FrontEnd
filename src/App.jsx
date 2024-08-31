@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './components/pageComponents/NavBar'
+import FeaturesPage from './components/pages/FeaturesPage'
 import HomePage from './components/pages/HomePage'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <main>
       <NavBar />
       <HomePage />
+      <FeaturesPage />
     </main>
   )
 }

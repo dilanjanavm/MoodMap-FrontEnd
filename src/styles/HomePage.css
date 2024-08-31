@@ -42,8 +42,8 @@
     max-width: 1512px;
     max-height: 4201px;
     position: absolute;
-    top: 160px;
-    left: -150px;
+    top: 0;
+    left: -250px;
     z-index: -1;
     transform: rotate(180deg) scaleY(-1);
 }

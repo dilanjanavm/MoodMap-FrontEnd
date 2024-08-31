@@ -19,14 +19,14 @@ const FeaturesPage = () => {
                   <h1 className="features-title">Essential Features for Your Mental Well-Being</h1>
                 </Col>
               </Row>
-              <Row>
-                <Col>
+              <Row className="features-cards-row">
+                <Col sm='4' md='4' lg='4' xl='4'>
                   <FeaturesCard card={1}/>
                 </Col>
-                <Col>
+                <Col sm='4' md='4' lg='4' xl='4'>
                   <FeaturesCard card={2}/>
                 </Col>
-                <Col>
+                <Col sm='4' md='4' lg='4' xl='4'>
                   <FeaturesCard card={3}/>
                 </Col>
               </Row>

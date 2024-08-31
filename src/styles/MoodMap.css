@@ -1,3 +1,6 @@
+.moodMadContainer{
+    margin-top: 160px;
+}
 .moodMapTitle {
     font-family: 'Onest', sans-serif;
     font-weight: 800;
@@ -20,4 +23,5 @@
     right: 0;
     color: #515151;
     max-width: 39%;
+    margin-top: 50px;
 }

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,9 +8,14 @@
   border: none;
   scroll-behavior: smooth;
 }
+
 body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }

@@ -9,7 +9,7 @@ import '../../styles/MoodMap.css';
 const MoodMapPage = () => {
     return (
         <>
-            <Container>
+            <Container className="moodMadContainer">
                 <div>
                     <Row>
                         <Col sm='12' md='12' lg='12' xl='12'>

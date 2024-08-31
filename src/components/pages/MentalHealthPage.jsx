@@ -6,7 +6,7 @@ import GreenCircle from '../../assets/greenRadL.png';
 
 const MentalHealthPage = () => {
     return (
-        <Container fluid style={{ position: 'relative', marginTop:'350px'}} className="features-page-container">
+        <Container fluid className="mental-health-page-container">
             <Row>
                 <Col sm='12' md='12' lg='6' xl='6'>
                     <div>

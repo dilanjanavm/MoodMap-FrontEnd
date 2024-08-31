@@ -1,3 +1,7 @@
+.mental-health-page-container{
+    position: relative;
+    margin-top: 550px;
+}
 .mental-title{
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
@@ -33,14 +37,18 @@
 
 .mental-image-container img:nth-child(1) {
     z-index: 1; 
+    position: absolute;
+    top: -750px;
 }
 
 .mental-image-container img:nth-child(2) {
     z-index: 2; 
+    position: absolute;
+    top: -230px;
 }
 .green-circle-mental{
     position: absolute;
-    top: -500px;
+    top: -650px;
     left: -200px;
     z-index: -1;
 }

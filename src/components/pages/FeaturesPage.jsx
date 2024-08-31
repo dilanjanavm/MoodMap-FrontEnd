@@ -5,7 +5,7 @@ import FeaturesCard from "../pageComponents/FeaturesCard";
 
 const FeaturesPage = () => {
   return (
-    <Container fluid style={{position: 'relative' }} className="features-page-container">
+    <Container fluid style={{position: 'relative' }} className="features-page-container" id="about">
       <Row>
         <Col sm='12' md='12' lg='12' xl='12'>
           <img src={flowers} alt="Flowers" className="flowers" />

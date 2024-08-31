@@ -5,7 +5,7 @@ import greenRadLB from '../../assets/greenRadLB.png';
 
 const StartJourney = () => {
     return (
-        <Container fluid className="startJourneyContainer">
+        <Container fluid className="startJourneyContainer" id="contact">
             <img src={greenRadLB} alt="Green Cirlce" className="greenCirleJourney" />
             <Row>
                 <Col>

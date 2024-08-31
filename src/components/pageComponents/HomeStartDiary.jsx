@@ -28,7 +28,7 @@ const HomeStartDiary = () => {
                     </div>
                 </div>
             </div>
-            <img src={greenRadR} alt="Green Gradient Circle" style={{ position: 'absolute', right: '-210px', top: '-400px', zIndex: -1 }} />
+            <img src={greenRadR} alt="Green Gradient Circle" style={{ position: 'absolute', right: '-210px', top: '-500px', zIndex: -1 }} />
         </div>
     )
 }

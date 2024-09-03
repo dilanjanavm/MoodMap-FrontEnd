@@ -1,0 +1,130 @@
+.monitoringSection {
+    position: relative;
+}
+
+.monitorPC,
+.monitorGC {
+    position: absolute;
+    top: 0;
+}
+
+.monitorPC {
+    left: -195px;
+}
+
+.monitorGC {
+    right: -195px;
+}
+
+.monitoringHeader {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.monitoringHeader>h1 {
+    font-family: 'Onest', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.monitoringHeader>span {
+    font-family: Onest;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30.6px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.monitorSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Onest', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20.4px;
+}
+
+.monitorSwitch img {
+    z-index: 2;
+}
+
+.monitorSwitch img:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transition-duration: .3s;
+}
+
+.monitoringBottom {
+    margin-top: 100px;
+}
+
+.monitoringText {
+    font-family: 'Onest', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17.85px;
+    text-align: left;
+}
+
+.monitoringCards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+.monitoringCards>h1 {
+    font-family: 'Onest', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.8px;
+    text-align: left;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.mcards {
+    display: flex;
+    overflow: hidden;
+    width: 600px;
+    scroll-behavior: smooth;
+}
+
+.mcards>* {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.prev-slide,
+.next-slide {
+    width: 25px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    cursor: pointer
+}
+.prev-slide:hover,
+.next-slide:hover{
+    scale: 1.2;
+    transition-duration: .3s;
+}
+.next-slide{
+    right: 0;
+}
+.prev-slide{
+    right: 35px;
+}

@@ -50,10 +50,11 @@ const Calender = () => {
 
     return (
         <section className='CalenderSection'>
+            
             <img src={purpleC} alt="Purple Circle Image" className='calenderPC' />
             <img src={greenC} alt="Green Circle Image" className='calenderGC' />
             <Container fluid >
-                <Row>
+                <Row >
                     <Col sm='12' md='12' lg='12' xl='12'>
                         <div className='calenderTop'>
                             <div>
@@ -80,6 +81,7 @@ const Calender = () => {
                                 ))}
                             </div>
                         </div>
+                        {/* Calender card */}
                         <CalenderCard day={'Monday'} message={'Make sure that the number of labels matches the number of probability values returned by the model. Adjust the labels list to fit the specific labels used by your model.'} date={'03/05/2024'}/>
                     </Col>
                 </Row>

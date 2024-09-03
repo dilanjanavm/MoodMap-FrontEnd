@@ -1,0 +1,86 @@
+.CalenderSection{
+    margin-top: 170px;
+    position: relative;
+    padding-top: 100px;
+}
+.calenderPC, .calenderGC{
+    position: absolute;
+    top: 0;
+}
+.calenderPC{
+    left: -195px;
+}
+.calenderGC{
+    right: -195px;
+}
+.calenderTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.calenderTop > div:nth-child(1){
+    text-align: left;
+}
+.calenderTop > div:nth-child(1)> h1{
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40.8px;
+}
+.calenderTop > div:nth-child(1)> h3{
+    font-family: 'Onest', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20.4px;
+}
+.calenderSwitch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Onest', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20.4px;
+}
+.calenderSwitch img{
+    z-index: 2;
+}
+.calenderSwitch img:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition-duration: .3s;
+}
+.CalenderSection .calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.dayHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.dayCell {
+    display: flex;
+    
+    width: 180px;
+    height: 140px;
+    background-color: lightgray;
+}
+
+.dayCell.filled {
+    background-color: #f0f0f0;
+}
+
+.calenderTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+

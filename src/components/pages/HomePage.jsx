@@ -1,12 +1,14 @@
-import { Col, Container, Row } from "reactstrap"
+import { Col, Container, Row } from "reactstrap";
 import rotatingHand from '../../assets/rotatingHand.mp4';
 import HomeStartDiary from "../pageComponents/HomeStartDiary";
 import '../../styles/HomePage.css';
 
 const HomePage = () => {
+
+
     return (
-        <Container fluid style={{marginTop:'206px', position:'relative'}}>
-            <Row>
+        <Container fluid style={{ marginTop: '206px', position: 'relative' }}>
+            <Row >
                 <Col sm='12' md='12' lg='12' xl='12'>
                     <h1 className="home-title">Navigate Your Emotions with Insightful Mood Tracking</h1>
                 </Col>
@@ -25,4 +27,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default HomePage;

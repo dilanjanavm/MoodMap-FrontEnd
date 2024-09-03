@@ -1,0 +1,64 @@
+.cCard {
+    max-width: 180px;
+    max-height: 140px;
+    border-radius: 4px;
+    border: 0.3px solid #B3B3B3;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #fff;
+    padding: 9px;
+}
+
+.cDay {
+    min-width: 58px;
+    min-height: 18px;
+    border-radius: 17px;
+    padding: 2px 7px;
+    gap: 10px;
+    color: #5D3DA7;
+    background-color: #BDA1FE2E;
+}
+
+.cCard>div:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cCard>div:nth-child(2) {
+    max-height: 69px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.cCard>div:nth-child(2)>p {
+    font-family: 'Onest', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12.75px;
+    text-align: left;
+}
+.cCard>div:last-child{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.cCard>div:last-child> span:first-child{
+    font-family: 'Onest', sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 10.2px;
+    text-align: left;
+    color: #C3C3C3;
+    cursor: pointer;
+}
+.cCard>div:last-child> span:last-child{
+    font-family: 'Onest', sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 10.2px;
+    text-align: left;
+    color: #5D3DA7;
+}

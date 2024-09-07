@@ -79,7 +79,7 @@ const Monitoring = () => {
                     <img src={nextbtn} alt="Next Button" onClick={handleNextMonth} />
                 </div>
             </div>
-            <Container className='monitoringBottom'>
+            <Container className='monitoringBottom' style={{minWidth:'100%', padding:'0 50px'}}>
                 <Row>
                     <Col sm='6' md='6' lg='6' xl='6'>
                         <MonitoringChart data={data} />

@@ -5,7 +5,7 @@ import nextbtn from '../../assets/calendernxt.png';
 import greenC from '../../assets/calenderGreenCircle.png'
 import purpleC from '../../assets/calenderPurpleCircle.png'
 import { useState } from 'react';
-import CalenderCard from '../pageComponents/CalenderCard';
+import CalenderCard from '../../components/pageComponents/CalenderCard.jsx';
 
 
 const Calender = () => {

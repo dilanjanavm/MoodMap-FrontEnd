@@ -99,7 +99,7 @@
 .mcards {
     display: flex;
     overflow: hidden;
-    width: 600px;
+    width: 750px;
     scroll-behavior: smooth;
 }
 

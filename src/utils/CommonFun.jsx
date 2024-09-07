@@ -65,3 +65,28 @@ const ToastContent = ({title, body, assets}) => (
         )}
     </Fragment>
 )
+
+
+export const getEMotionEmoji = (emotion) => {
+    const ANGER = '😡'
+    const DISGUST = '🤢'
+    const FEAR = '😨'
+    const JOY = '😄'
+    const NATURAL = '🙂'
+    const SADNESS = '😔'
+    const SHAME = '🥺'
+    const SURPRISE = '😱'
+
+    let main_emotion = ''
+    emotion === 'joy' ? main_emotion = JOY :
+        emotion === 'natual' ? main_emotion = NATURAL :
+            emotion === 'sadness' ? main_emotion = SADNESS :
+                emotion === 'shame' ? main_emotion = SHAME :
+                    emotion === 'surprise' ? main_emotion = SURPRISE :
+                        emotion === 'fear' ? main_emotion = FEAR :
+                        emotion === 'disgust' ? main_emotion = DISGUST :
+                        emotion === 'anger' ? main_emotion = ANGER :
+                            main_emotion = JOY
+
+    return main_emotion
+}

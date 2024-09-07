@@ -6,6 +6,7 @@
 .monitorGC {
     position: absolute;
     top: 0;
+    z-index: -999999;
 }
 
 .monitorPC {
@@ -24,7 +25,7 @@
     justify-content: space-between;
 }
 
-.monitoringHeader>h1 {
+.monitoringHeader > h1 {
     font-family: 'Onest', sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -33,7 +34,7 @@
     text-align: left;
 }
 
-.monitoringHeader>span {
+.monitoringHeader > span {
     font-family: Onest;
     font-size: 24px;
     font-weight: 300;
@@ -64,7 +65,7 @@
 }
 
 .monitoringBottom {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .monitoringText {
@@ -79,16 +80,31 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+
     position: relative;
 }
 
-.monitoringCards>h1 {
+.monitoringCards > h1 {
     font-family: 'Onest', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 40.8px;
     text-align: left;
+}
+
+.diaryDetails {
+    text-align: start;
+
+}
+
+.diaryDetails-card {
+    background: rgba(255, 255, 255, 0.28)!important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+
 }
 
 .slider-container {
@@ -103,7 +119,7 @@
     scroll-behavior: smooth;
 }
 
-.mcards>* {
+.mcards > * {
     flex: 0 0 auto;
     width: 300px;
     margin-right: 10px;
@@ -117,14 +133,17 @@
     z-index: 2;
     cursor: pointer
 }
+
 .prev-slide:hover,
-.next-slide:hover{
+.next-slide:hover {
     scale: 1.2;
     transition-duration: .3s;
 }
-.next-slide{
+
+.next-slide {
     right: 0;
 }
-.prev-slide{
+
+.prev-slide {
     right: 35px;
 }

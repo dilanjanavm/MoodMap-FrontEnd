@@ -4,7 +4,7 @@ import Calender from './pages/diary-page/Calender.jsx';
 import FeaturesPage from './components/pages/FeaturesPage';
 import HomePage from './pages/home/index.jsx';
 import MentalHealthPage from './components/pages/MentalHealthPage';
-import Monitoring from './components/pages/Monitoring';
+import Monitoring from './pages/Monitor/Monitoring.jsx';
 import MoodMapPage from './components/pages/MoodMapPage';
 import StartJourney from './components/pages/StartJourney';
 import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';

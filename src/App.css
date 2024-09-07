@@ -4,8 +4,8 @@
   text-align: center;
 }
 ::selection {
-  background-color: #AE8BFF; 
-  color: white; 
+  background-color: #AE8BFF;
+  color: white;
 }
 ::-webkit-scrollbar {
   width: 12px;

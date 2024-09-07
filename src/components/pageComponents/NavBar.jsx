@@ -27,7 +27,11 @@ function NavBar(args) {
                             <NavLink href="/monitoring" className='nav-txt'>Monitoring</NavLink>
                         </NavItem>
                     </Nav>
-                    <Button outline className='mx-2 NavBarButton'>Login</Button>
+                    <NavLink href="/login" className='nav-txt'>
+                        <Button outline className='mx-2 NavBarButton'>
+                            Login</Button>
+                    </NavLink>
+
                 </Collapse>
             </Navbar>
         </div>

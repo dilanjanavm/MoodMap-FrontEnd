@@ -1,16 +1,31 @@
-import { Col, Container, Row } from 'reactstrap'
+import {Col, Container, Row} from 'reactstrap'
 import '../../styles/Calender.css'
 import backbtn from '../../assets/calenderbck.png';
 import nextbtn from '../../assets/calendernxt.png';
 import greenC from '../../assets/calenderGreenCircle.png'
 import purpleC from '../../assets/calenderPurpleCircle.png'
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import CalenderCard from '../../components/pageComponents/CalenderCard.jsx';
+import {getDiaryDetails} from "../../service/diaryService.js";
 
 
 const Calender = () => {
 
     const [currentDate, setCurrentDate] = useState(new Date());
+
+    const [diaryRecords, setDiaryRecords] = useState([])
+
+    useEffect(() => {
+        getCurrentDiaryRecords()
+    }, []);
+
+    const getCurrentDiaryRecords = () => {
+        //setDiaryRecords
+
+        getDiaryDetails().then(res => {
+            console.log(res)
+        })
+    }
 
     const handlePreMonth = () => {
         setCurrentDate(prevDate => {
@@ -29,7 +44,7 @@ const Calender = () => {
     };
 
     const formatDate = (date) => {
-        const options = { year: 'numeric', month: 'short' };
+        const options = {year: 'numeric', month: 'short'};
         return date.toLocaleDateString('en-US', options).toUpperCase();
     };
 
@@ -44,17 +59,17 @@ const Calender = () => {
     const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
 
     const daysArray = Array(firstDayOfMonth).fill(null).concat(
-        Array.from({ length: daysInMonth }, (_, i) => i + 1)
+        Array.from({length: daysInMonth}, (_, i) => i + 1)
     );
 
 
     return (
         <section className='CalenderSection'>
-            
-            <img src={purpleC} alt="Purple Circle Image" className='calenderPC' />
-            <img src={greenC} alt="Green Circle Image" className='calenderGC' />
-            <Container fluid >
-                <Row >
+
+            <img src={purpleC} alt="Purple Circle Image" className='calenderPC'/>
+            <img src={greenC} alt="Green Circle Image" className='calenderGC'/>
+            <Container fluid>
+                <Row>
                     <Col sm='12' md='12' lg='12' xl='12'>
                         <div className='calenderTop'>
                             <div>
@@ -62,9 +77,9 @@ const Calender = () => {
                                 <h3>How is your day?</h3>
                             </div>
                             <div className='calenderSwitch'>
-                                <img src={backbtn} alt="back button" onClick={handlePreMonth} />
+                                <img src={backbtn} alt="back button" onClick={handlePreMonth}/>
                                 <span>{formatDate(currentDate)}</span>
-                                <img src={nextbtn} alt="next button" onClick={handleNextMonth} />
+                                <img src={nextbtn} alt="next button" onClick={handleNextMonth}/>
                             </div>
                         </div>
                     </Col>
@@ -82,7 +97,9 @@ const Calender = () => {
                             </div>
                         </div>
                         {/* Calender card */}
-                        <CalenderCard day={'Monday'} message={'Make sure that the number of labels matches the number of probability values returned by the model. Adjust the labels list to fit the specific labels used by your model.'} date={'03/05/2024'}/>
+                        <CalenderCard day={'Monday'}
+                                      message={'Make sure that the number of labels matches the number of probability values returned by the model. Adjust the labels list to fit the specific labels used by your model.'}
+                                      date={'03/05/2024'}/>
                     </Col>
                 </Row>
             </Container>

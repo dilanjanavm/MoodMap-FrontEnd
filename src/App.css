@@ -1,50 +1,68 @@
 #root {
-  margin: 0 auto;
-  padding: 0 12rem;
-  text-align: center;
+    margin: 0 auto;
+    padding: 0 8rem;
+    text-align: center;
 }
+
 ::selection {
-  background-color: #AE8BFF;
-  color: white;
+    background-color: #AE8BFF;
+    color: white;
 }
+
 ::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+    background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #AE8BFF;
-  border-radius: 6px;
+    background-color: #AE8BFF;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #7f4df1;
-  cursor: pointer;
+    background-color: #7f4df1;
+    cursor: pointer;
 }
 
+.flatpickr-month {
+    background: #7f4df1 !important;
+}
+
+.flatpickr-current-month,
+.flatpickr-weekdays,
+.flatpickr-weekdaycontainer,
+.flatpickr-weekday,
+.flatpickr-monthDropdown-months {
+    background: #7f4df1 !important;
+}
+
+
+.flatpickr-calendar.arrowTop:after{
+    border-bottom-color: #7f4df1 !important;
+}
 @media (max-width: 1200px) {
-  #root {
-    padding: 0 5rem;
-  }
+    #root {
+        padding: 0 5rem;
+    }
 }
 
 @media (max-width: 768px) {
-  #root {
-    padding: 0 2rem;
-  }
+    #root {
+        padding: 0 2rem;
+    }
 }
 
 @media (max-width: 480px) {
-  #root {
-    padding: 0 1rem;
-  }
+    #root {
+        padding: 0 1rem;
+    }
 }
 
 @media (max-width: 320px) {
-  #root {
-    padding: 0 0.5rem;
-  }
+    #root {
+        padding: 0 0.5rem;
+    }
 }

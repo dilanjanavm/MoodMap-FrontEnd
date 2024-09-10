@@ -6,45 +6,6 @@
     padding: 9px;
 }
 
-.anger-bg {
-    background-color: #ffd1d1;
-    border: 0.3px solid #ad0000;
-}
-
-.disgust-bg {
-    background-color: #d8f6d8;
-    border: 0.3px solid #228B22;
-}
-
-.fear-bg {
-    background-color: #e5d9f2;
-    border: 0.3px solid #4B0082;
-}
-
-.joy-bg {
-    background-color: #fffde5;
-    border: 0.3px solid #FFD700;
-}
-
-.natural-bg {
-    background-color: #e5f3fa;
-    border: 0.3px solid #87CEEB;
-}
-
-.sadness-bg {
-    background-color: #d2e9f9;
-    border: 0.3px solid #1E90FF;
-}
-
-.shame-bg {
-    background-color: #ffe5e5;
-    border: 0.3px solid #FFB6C1;
-}
-
-.surprise-bg {
-    background-color: #ffedd9;
-    border: 0.3px solid #FFA500;
-}
 
 .cDay {
     min-width: 58px;

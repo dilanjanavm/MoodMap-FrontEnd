@@ -7,17 +7,17 @@ const HomePage = () => {
 
 
     return (
-        <Container fluid style={{ marginTop: '206px', position: 'relative' }}>
+        <Container className='home-page' fluid style={{ position: 'relative' }}>
             <Row >
-                <Col sm='12' md='12' lg='12' xl='12'>
+                <Col sm='12' md='6' lg='8' xl='12'>
                     <h1 className="home-title">Navigate Your Emotions with Insightful Mood Tracking</h1>
                 </Col>
                 <Col sm='12' md='12' lg='12' xl='12'>
                     <Row>
-                        <Col sm='12' md='12' lg='7' xl='7'>
+                        <Col sm='12' md='12' lg='6' xl='6'>
                             <video src={rotatingHand} loop autoPlay muted className="home-video" />
                         </Col>
-                        <Col sm='12' md='12' lg='5' xl='5'>
+                        <Col sm='12' md='12' lg='6' xl='6'>
                             <HomeStartDiary />
                         </Col>
                     </Row>

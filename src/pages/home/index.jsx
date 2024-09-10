@@ -10,7 +10,7 @@ const Home = () => {
       <HomePage />
       <FeaturesPage />
       <MentalHealthPage />
-      <MoodMapPage />
+      {/*<MoodMapPage />*/}
       <StartJourney />
   </div>
 }

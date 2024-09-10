@@ -17,3 +17,12 @@ export async function getDiaryDetailsById(id) {
     apiObject.body = null;
     return await ApiService.callApi(apiObject);
 }
+
+export async function saveDiaryDetails(data) {
+    const apiObject = {};
+    apiObject.method = 'POST';
+    apiObject.authentication = true;
+    apiObject.endpoint = `predict_details`;
+    apiObject.body = data;
+    return await ApiService.callApi(apiObject);
+}

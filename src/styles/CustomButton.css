@@ -11,3 +11,17 @@
     line-height: 25.5px;
     z-index: 2;
 }
+
+.btn.custom-button:hover{
+    background-color: #bb8ada;
+    border: none;
+    cursor: pointer;
+    padding: 19px 52px;
+    border-radius: 65px;
+    gap: 3px;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.5px;
+    z-index: 2;
+}

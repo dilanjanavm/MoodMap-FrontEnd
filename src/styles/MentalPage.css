@@ -3,17 +3,18 @@
     margin-top: 550px;
 }
 .mental-title{
+    margin-top: 6rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 60px;
     text-align: left;
 }
 .mental-description{
     font-family: 'Onest', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 30.12px;
+    line-height: 26px;
     text-align: left;
     color: #515151;
     margin-top: 40px;

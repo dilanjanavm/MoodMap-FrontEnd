@@ -1,8 +1,10 @@
 #root {
-    margin: 0 auto;
-    padding: 0 8rem;
-    text-align: center;
+    /*margin: 0 auto;*/
+    /*padding: 0 8rem;*/
+    /*text-align: center;*/
 }
+
+
 
 ::selection {
     background-color: #AE8BFF;

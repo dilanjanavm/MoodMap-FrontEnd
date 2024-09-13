@@ -9,12 +9,14 @@ import {ToastContainer} from "react-toastify";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/_fullcalendar.scss'
 import "remixicon/fonts/remixicon.css";
+import Loader from "./components/Common/Loader.jsx";
 
 function AppRoutes() {
     const location = useLocation(); // This gets the current route
 
     return (
         <>
+
             <ToastContainer newestOnTop/>
             {location.pathname !== "/login" && <NavBar/>}
             <>
@@ -33,6 +35,7 @@ function AppRoutes() {
 function App() {
     return (
         <Router>
+
             <AppRoutes/>
         </Router>
     );

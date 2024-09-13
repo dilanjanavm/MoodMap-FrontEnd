@@ -30,10 +30,13 @@ import moment from "moment";
 import {customToastMsg} from "../../utils/CommonFun.jsx";
 import {BarChart2} from 'react-feather'
 import {useNavigate} from 'react-router-dom'
+import {useRecoilState} from "recoil";
+import {loaderState} from "../../state/loaderState.jsx";
 const Calendar = () => {
     document.title = "Calendar | Velzon - React Admin & Dashboard Template";
 const navigate =useNavigate()
     const [event, setEvent] = useState({});
+    const [isLoading, setIsLoading] = useRecoilState(loaderState);
     const [modal, setModal] = useState(false);
     const [deleteModal, setDeleteModal] = useState(false);
     const [selectedDay, setSelectedDay] = useState(0);
@@ -62,6 +65,7 @@ const navigate =useNavigate()
     }, []);
 
     const getCurrentDiaryRecords = () => {
+        setIsLoading(true)
         getDiaryDetails().then(data => {
             const events = data.data.map((report) => ({
                 id: report.id,
@@ -75,6 +79,7 @@ const navigate =useNavigate()
                 backgroundColor: colorMap[report.main_emotion] || '#808080',
             }));
             setCalendarEvents(events);
+            setIsLoading(false)
         }).catch(err => {
             console.error('Error fetching diary records:', err);
         });

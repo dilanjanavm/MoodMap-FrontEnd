@@ -22,15 +22,20 @@
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.2) !important;
-    backdrop-filter: blur(5px)!important;
-    border-radius: 10px!important;
-    border: 1px solid rgba(255, 255, 255, 0.18)!important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
     box-shadow: 0 8px 32px rgba(69, 31, 135, 0.24) !important;
 }
 
 .sug-card {
     transition: .5s;
-    height: 400px !important;
+    height: 460px !important;
+}
+
+.sug-card-info {
+    font-size: 12px;
+    line-height: 15px;
 }
 
 .sug-card:hover {

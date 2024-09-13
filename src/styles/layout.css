@@ -1,0 +1,29 @@
+.layout-root{
+    margin: 0 auto;
+    padding: 0 8rem;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .layout-root {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-root {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-root {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .layout-root {
+        padding: 0 0.5rem;
+    }
+}

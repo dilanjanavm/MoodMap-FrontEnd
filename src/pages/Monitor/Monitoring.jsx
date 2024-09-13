@@ -21,8 +21,14 @@ import {
     Bar,
     Label
 } from 'recharts';
+import {useRecoilState} from "recoil";
+import {loaderState} from "../../state/loaderState.jsx";
+import {customToastMsg} from "../../utils/CommonFun.jsx";
 
 const Monitoring = () => {
+
+    const [isLoading, setIsLoading] = useRecoilState(loaderState);
+
     const [diaryData, setDiaryData] = useState(null);
     const [overallReport, setOverallReport] = useState([]); // Add this to store overall report
     const [overallReportDesc, setOverallReportDesc] = useState(''); // Add this to store overall report
@@ -42,6 +48,7 @@ const Monitoring = () => {
     };
 
     const getReportDetails = () => {
+        setIsLoading(true)
         let data = {
             "start_date": moment(dateRange[0]).format('YYYY-MM-DD'),
             "end_date": moment(dateRange[1]).format('YYYY-MM-DD')
@@ -54,6 +61,10 @@ const Monitoring = () => {
             setOverallReportDesc(res.overall_report_desc);
             setSuggestions(res.suggestions);
             console.log(res.suggestions)
+            setIsLoading(false)
+        }).catch(c=>{
+            customToastMsg('Something went wrong',1)
+            setIsLoading(false)
         });
     };
 
@@ -186,16 +197,16 @@ const Monitoring = () => {
                     <Row style={{margin: '2rem 0 4rem 0'}}>
                         {suggestions?.map((item) => (
                             <Col sm={12} md={4} lg={4} key={item.id}>
-                                <Card className='w-100 glassmorphism sug-card m-2'>
+                                <Card className='w-100   sug-card m-2'>
                                     <CardBody>
                                         <CardTitle className='text-purple'><b>{item.topic}</b></CardTitle>
                                         <hr/>
                                         <CardBody>
-                                            <small>
+                                            <small className='sug-card-info'>
                                                 {item.explanation}
                                             </small>
                                             <br/>
-                                            <br/>
+
                                             <p className='step-bg'>
                                                 {item.steps}
                                             </p>

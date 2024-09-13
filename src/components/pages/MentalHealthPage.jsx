@@ -8,7 +8,7 @@ const MentalHealthPage = () => {
     return (
         <Container fluid className="mental-health-page-container" id="why">
             <Row>
-                <Col sm='12' md='12' lg='6' xl='6'>
+                <Col sm='12' md='12' lg='6' xl='8'>
                     <div>
                         <img src={GreenCircle} alt="Green Circle" className="green-circle-mental" />
                         <h1 className="mental-title">Your AI-Powered Mental Health Companion</h1>

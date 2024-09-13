@@ -19,14 +19,14 @@ const FeaturesPage = () => {
                   <h1 className="features-title">Essential Features for Your Mental Well-Being</h1>
                 </Col>
               </Row>
-              <Row className="features-cards-row">
-                <Col sm='4' md='4' lg='4' xl='4'>
+              <Row className="features-cards-row d-flex justify-content-between">
+                <Col sm='4' md='4' lg='4' xl='3'>
                   <FeaturesCard card={1}/>
                 </Col>
-                <Col sm='4' md='4' lg='4' xl='4'>
+                <Col sm='4' md='4' lg='4' xl='3'>
                   <FeaturesCard card={2}/>
                 </Col>
-                <Col sm='4' md='4' lg='4' xl='4'>
+                <Col sm='4' md='4' lg='4' xl='3'>
                   <FeaturesCard card={3}/>
                 </Col>
               </Row>

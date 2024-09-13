@@ -1,40 +1,49 @@
-.CalenderSection{
-    margin-top: 170px;
+.CalenderSection {
+    margin-top: 2rem;
     position: relative;
     padding-top: 100px;
 }
-.calenderPC, .calenderGC{
+
+.calenderPC, .calenderGC {
     position: absolute;
     top: 0;
+    z-index: -999999;
 }
-.calenderPC{
+
+.calenderPC {
     left: -195px;
 }
-.calenderGC{
+
+.calenderGC {
     right: -195px;
 }
-.calenderTop{
+
+.calenderTop {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.calenderTop > div:nth-child(1){
+
+.calenderTop > div:nth-child(1) {
     text-align: left;
 }
-.calenderTop > div:nth-child(1)> h1{
+
+.calenderTop > div:nth-child(1) > h1 {
     font-family: 'Onest', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 40.8px;
 }
-.calenderTop > div:nth-child(1)> h3{
+
+.calenderTop > div:nth-child(1) > h3 {
     font-family: 'Onest', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 20.4px;
 }
-.calenderSwitch{
+
+.calenderSwitch {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,14 +53,17 @@
     font-size: 16px;
     line-height: 20.4px;
 }
-.calenderSwitch img{
+
+.calenderSwitch img {
     z-index: 2;
 }
-.calenderSwitch img:hover{
+
+.calenderSwitch img:hover {
     cursor: pointer;
     scale: 1.2;
     transition-duration: .3s;
 }
+
 .CalenderSection .calendarGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -67,7 +79,7 @@
 
 .dayCell {
     display: flex;
-    
+
     width: 180px;
     height: 140px;
     background-color: lightgray;

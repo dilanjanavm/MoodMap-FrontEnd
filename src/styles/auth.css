@@ -1,0 +1,150 @@
+
+
+
+.auth-page-wrapper {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+
+    .login-side-page {
+        background: #ffffff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        .login-wrapper {
+            width: 100%;
+            padding: 0 5rem;
+            @media (max-width: 425px) {
+                padding: 0 2rem;
+            }
+        }
+
+        .title-moodmap {
+            text-decoration: none;
+            color: #3f3f3f;
+
+        }
+    }
+
+    .auth-page-content {
+        position: absolute;
+        right: 1.2rem;
+        /*z-index: 2;*/
+        width: 100%;
+    }
+
+    .footer {
+        left: 0;
+        background-color: transparent;
+        color: #000;
+    }
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.login-from {
+    text-align: justify !important;
+}
+
+.auth-one-bg-position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 575.98px) {
+        height: 280px;
+    }
+}
+
+.auth-one-bg {
+    background-image: url("../assets/bg-4.png");
+    background-position: center;
+    background-size: cover;
+
+    .bg-overlay {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1));
+        opacity: 0.2;
+    }
+}
+
+.auth-pass-inputgroup input[type="text"] + .btn .mdi-eye-fill {
+    &:before {
+        content: "\ecb6";
+    }
+}
+
+.signin-other-title {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        right: 0;
+        border-top: 1px dashed #ccc;
+        top: 10px;
+    }
+
+    .title {
+        display: inline-block;
+        position: relative;
+        /*z-index: 9;*/
+        background-color: #f9f9f9;
+        padding: 2px 16px;
+    }
+}
+
+.auth-bg-cover {
+    background: #f5f5f5;
+
+    .bg-overlay {
+        background-image: url("../assets/Flowers.png");
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+#password-contain {
+    display: none;
+
+    & p {
+        padding-left: 13px;
+
+        &.valid {
+            color: #28a745;
+
+            &::before {
+                position: relative;
+                left: -8px;
+                content: "✔";
+            }
+        }
+
+        &.invalid {
+            color: #dc3545;
+
+            &::before {
+                position: relative;
+                left: -8px;
+                content: "✖";
+            }
+        }
+    }
+}
+
+.signin-btn {
+    margin-top: 1rem;
+    background-color: #5D3DA7 !important;
+}

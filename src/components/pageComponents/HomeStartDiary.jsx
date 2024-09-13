@@ -10,7 +10,7 @@ import '../../styles/HomePage.css';
 
 const HomeStartDiary = () => {
     return (
-        <div style={{ position: 'relative', width: "100%", height: "100%", top: '40px' }}>
+        <div style={{ position: 'relative', width: "100%", height: "100%", top: '20px' }}>
             <div className='employeeImagesWrapper'>
                 <div className='employeeImages'>
                     <span><img src={image1} alt="employee image 1" /></span>

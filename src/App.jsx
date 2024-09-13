@@ -1,26 +1,44 @@
-import './App.css'
-import NavBar from './components/pageComponents/NavBar'
-import Calender from './components/pages/Calender'
-import FeaturesPage from './components/pages/FeaturesPage'
-import HomePage from './components/pages/HomePage'
-import MentalHealthPage from './components/pages/MentalHealthPage'
-import Monitoring from './components/pages/Monitoring'
-import MoodMapPage from './components/pages/MoodMapPage'
-import StartJourney from './components/pages/StartJourney'
+import './App.css';
+import NavBar from './components/pageComponents/NavBar';
+import Calender from './pages/diary-page/Calender.jsx';
+import HomePage from './pages/home/index.jsx';
+import Monitoring from './pages/Monitor/Monitoring.jsx';
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
+import Login from "./pages/auth/Login/index.jsx";
+import {ToastContainer} from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/scss/_fullcalendar.scss'
+import "remixicon/fonts/remixicon.css";
+import Loader from "./components/Common/Loader.jsx";
 
-function App() {
-  return (
-    <main>
-      <NavBar />
-      <HomePage />
-      <FeaturesPage />
-      <MentalHealthPage />
-      <MoodMapPage />
-      <StartJourney />
-      <Calender />
-      <Monitoring />
-    </main>
-  )
+function AppRoutes() {
+    const location = useLocation(); // This gets the current route
+
+    return (
+        <>
+
+            <ToastContainer newestOnTop/>
+            {location.pathname !== "/login" && <NavBar/>}
+            <>
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/diary" element={<Calender/>}/>
+                    <Route path="/monitoring" element={<Monitoring/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                    {/*<Route path="/register" element={<Register />} */}
+                </Routes>
+            </>
+        </>
+    );
 }
 
-export default App
+function App() {
+    return (
+        <Router>
+
+            <AppRoutes/>
+        </Router>
+    );
+}
+
+export default App;

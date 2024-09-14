@@ -1,10 +1,18 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button} from 'reactstrap';
 import MoodMapLogo from '../../assets/MoodMapLogo.png';
 import '../../styles/NavBar.css';
+import * as constant from '../../constants/constants.js'
+import Cookies from "js-cookie";
+import {Power} from 'react-feather'
 
 function NavBar(args) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLogged, setIsLogged] = useState(false);
+
+    useEffect(() => {
+        setIsLogged(Cookies.get(constant.ACCESS_TOKEN))
+    }, []);
 
     const toggle = () => setIsOpen(!isOpen);
 
@@ -28,8 +36,8 @@ function NavBar(args) {
                         </NavItem>
                     </Nav>
                     <NavLink href="/login" className='nav-txt'>
-                        <Button outline className='mx-2 NavBarButton'>
-                            Login</Button>
+                        {!isLogged ? <Button outline className='mx-2 NavBarButton'>
+                            Login</Button> : <Button   className='logout-btn'><Power color='#AE8BFF'/></Button>}
                     </NavLink>
 
                 </Collapse>

@@ -261,7 +261,7 @@ const navigate =useNavigate()
                                     tag="h5"
                                     className="p-3  modal-title"
                                 >
-                                    {isEdit ? "WHat did you think" : "Add Event"}
+                                    {isEdit ? "What did you think" : "Add Event"}
                                 </ModalHeader>
                                 <ModalBody>
                                     {isEdit ? (

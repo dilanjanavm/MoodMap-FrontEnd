@@ -8,3 +8,12 @@ export async function loginWithEmailAndPassword(data) {
     apiObject.body = data;
     return await ApiService.callApi(apiObject);
 }
+
+export async function registerUser(data) {
+    const apiObject = {};
+    apiObject.method = 'POST';
+    apiObject.authentication = true;
+    apiObject.endpoint = 'register';
+    apiObject.body = data;
+    return await ApiService.callApi(apiObject);
+}

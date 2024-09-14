@@ -5,7 +5,6 @@
 }
 
 
-
 ::selection {
     background-color: #AE8BFF;
     color: white;
@@ -37,14 +36,17 @@
 .flatpickr-weekdays,
 .flatpickr-weekdaycontainer,
 .flatpickr-weekday,
-.flatpickr-monthDropdown-months {
+.flatpickr-monthDropdown-months,
+.flatpickr-next-month,
+.flatpickr-prev-month {
     background: #7f4df1 !important;
 }
 
 
-.flatpickr-calendar.arrowTop:after{
+.flatpickr-calendar.arrowTop:after {
     border-bottom-color: #7f4df1 !important;
 }
+
 @media (max-width: 1200px) {
     #root {
         padding: 0 5rem;

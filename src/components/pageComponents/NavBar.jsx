@@ -37,7 +37,9 @@ function NavBar(args) {
                     </Nav>
                     <NavLink href="/login" className='nav-txt'>
                         {!isLogged ? <Button outline className='mx-2 NavBarButton'>
-                            Login</Button> : <Button   className='logout-btn'><Power color='#AE8BFF'/></Button>}
+                            Login</Button> : <Button onClick={() => {
+                            Cookies.remove(constant.ACCESS_TOKEN)
+                        }} className='logout-btn'><Power color='#AE8BFF'/></Button>}
                     </NavLink>
 
                 </Collapse>

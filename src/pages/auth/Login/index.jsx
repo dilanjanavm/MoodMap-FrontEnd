@@ -84,7 +84,13 @@ function Login() {
                                     <Label for="auth-remember-check" check>Remember me</Label>
                                 </FormGroup>
 
-                                <Button className='signin-btn' type="submit" block>Sign In</Button>
+                                <Button className='signin-btn mb-3' type="submit" block>Sign In</Button>
+
+                                <p className='text-center'>Don't you have an account? <a className='text-purple'
+                                                                                         href="/create-account">Sign
+                                    Up</a>
+                                </p>
+
                             </Form>
 
                             <div className="footer">

@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/_fullcalendar.scss'
 import "remixicon/fonts/remixicon.css";
 import Loader from "./components/Common/Loader.jsx";
+import Register from "./pages/auth/Register/Register.jsx";
 
 function AppRoutes() {
     const location = useLocation(); // This gets the current route
@@ -25,6 +26,7 @@ function AppRoutes() {
                     <Route path="/diary" element={<Calender/>}/>
                     <Route path="/monitoring" element={<Monitoring/>}/>
                     <Route path="/login" element={<Login/>}/>
+                    <Route path="/create-account" element={<Register/>}/>
                     {/*<Route path="/register" element={<Register />} */}
                 </Routes>
             </>

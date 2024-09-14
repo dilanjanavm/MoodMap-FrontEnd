@@ -6,6 +6,11 @@
     font-size: 16px;
 }
 
+.logout-btn {
+    border: #AE8BFF 1px solid !important;
+background-color: transparent!important;
+}
+
 .nav-link.nav-txt:hover {
     color: #AE8BFF;
 }
